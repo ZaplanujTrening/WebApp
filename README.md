@@ -15,3 +15,7 @@ Wchodzimy w cmd w ścieżkę z naszym projektem i otwieramy go w Visual Studio C
 ## Generowanie struktur
 
 Do generowania struktur w projekcie używamy komendy `ng generate [component/module/service/class/...] struct-name`. Możemy też używać skróconej wersji `ng g c modules/exercise`.
+
+## Czego używamy do budowy strony?
+
+Korzystamy z gotowego framework'u ngPrime, dokumentacja na stonie: https://www.primefaces.org/primeng/showcase/#/.
