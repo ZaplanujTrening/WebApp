@@ -9,17 +9,17 @@ const routes: Routes = [
     component: ExerciseComponent,
     children: [
       {
-        path: 'lists',
+        path: 'list',
         component: ExerciseListComponent,
       },
-      { path: '', redirectTo: 'lists', pathMatch: 'full' },
-      { path: '**', redirectTo: 'lists', pathMatch: 'full' },
+      { path: '', redirectTo: 'list', pathMatch: 'full' },
+      { path: '**', redirectTo: 'list', pathMatch: 'full' },
     ],
-  },
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ExerciseModule { }
+export class ExerciseRoutingModule { }
