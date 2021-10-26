@@ -10,7 +10,7 @@ Projekt aplikacji na zaliczenie z Inżynierii Oprogramowania. Wersja angulara 12
 
 ## Jak uruchomić projekt?
 
-Wchodzimy w cmd w ścieżkę z naszym projektem i otwieramy go w Visual Studio Code poprzez `code .`. Następnie otwieramy terminal w vs code, w którym wpisujemy `npm install`. Później wpisujemy w nim `ng serve --o`. Projekt uruchomi się na http://localhost:4200/, a parametr `--o` otworzy nam przeglądarkę z danym linkiem.
+Wchodzimy w cmd w ścieżkę z naszym projektem i otwieramy go w Visual Studio Code poprzez `code .`. Następnie otwieramy terminal w vs code, w którym wpisujemy `npm install`. Później wpisujemy w nim `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`, a następnie `ng serve --o`. Projekt uruchomi się na http://localhost:4200/, a parametr `--o` otworzy nam przeglądarkę z danym linkiem.
 
 ## Generowanie struktur
 
