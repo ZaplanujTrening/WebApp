@@ -2,26 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
 
-## Development server
+## Wymagania
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Visual Studio Code,
+- npm,
+- node.js
 
-## Code scaffolding
+## Jak uruchomić projekt?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Wchodzimy w cmd w ścieżkę z naszym projektem i otwieramy go w Visual Studio Code poprzez `code .`. Następnie otwieramy terminal, w którym wpisujemy `npm install`. Później wpisujemy w nim `ng serve --o`. Projekt uruchomi się na http://localhost:4200/, a parametr `--o` otworzy nam przeglądarkę z danym linkiem.
 
-## Build
+## Generowanie struktur
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Do generowania struktur w projekcie używamy komendy `ng generate [component/module/service/class/...] struct-name`. Możemy też używać skróconej wersji `ng g c modules/exercise`.
