@@ -1,13 +1,140 @@
+
+<p-dialog header="Klatka piersiowa" [modal]="true" [(visible)]="display" [style]="{width: '35vw'}">
+    <p-skeleton width="100%" height="15rem"></p-skeleton>
+    <span>    
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt!
+    </span>
+    <div class="p-fluid p-grid p-mt-2">
+        <div class="p-col-6">
+            <span class="p-float-label">
+                <input type="text" id="inputtext" pInputText> 
+                <label for="inputtext">Ilość serii</label>
+            </span>
+        </div>
+        <div class="p-col-6">
+            <span class="p-float-label">
+                <input type="text" id="inputtext-left" pInputText> 
+                <label for="inputtext-left">Powtórzenia/Czas</label>
+            </span>
+        </div>
+    </div>
+    <ng-template pTemplate="footer">
+        <div class="p-d-flex p-jc-between">
+            <p-button label="Dodaj" icon="pi pi-plus"></p-button>
+            <p-button label="Wyjdź" icon="pi pi-times" styleClass="p-button-outlined" [style]="{'margin-left': '.5em'}"></p-button>
+        </div>
+    </ng-template>
+</p-dialog>
+
 <div class="p-grid">
-    <div class="p-col-12 p-md-6 p-lg-4">
-        <p-card>
-            <ng-template pTemplate="header">
-                Header content here
-            </ng-template>
-                Body Content
-            <ng-template pTemplate="footer">
-                Footer content here
-            </ng-template>
+    <div class="p-col-12 p-md-3">
+        <!-- [style]="{'height': '690px'}" -->
+        <!-- [style]="{'width': '327px'}" -->
+        <p-card header="Twój trening" [style]="{'height': '690px'}">
+            <!-- <p-messages severity="success">
+                <ng-template pTemplate>
+                    <span class="custom-message">Wyciskanie hantelek (3 x 12)</span>
+                    <button type="button" pripple="" class="p-ripple p-element p-message-close p-link ng-star-inserted" style="width:3rem;">
+                        <i class="p-message-close-icon pi pi-pencil p-mr-2"></i>
+                        <i class="p-message-close-icon pi pi-times"></i>
+                        <span class="p-ink"></span>
+                    </button>
+                </ng-template>
+            </p-messages> -->
+            <p-messages severity="success">
+                <ng-template pTemplate>
+                    <span class="custom-message">Przysiady (4 x 20)</span>
+                    <button type="button" pripple="" class="p-ripple p-element p-message-close p-link ng-star-inserted" style="width:3rem;">
+                        <i class="p-message-close-icon pi pi-pencil p-mr-2"></i>
+                        <i class="p-message-close-icon pi pi-times"></i>
+                        <span class="p-ink"></span>
+                    </button>
+                </ng-template>
+            </p-messages>
+            <p-messages severity="success">
+                <ng-template pTemplate>
+                    <span class="custom-message">Wznosy ramion (2 x 15)</span>
+                    <button type="button" pripple="" class="p-ripple p-element p-message-close p-link ng-star-inserted" style="width:3rem;">
+                        <i class="p-message-close-icon pi pi-pencil p-mr-2"></i>
+                        <i class="p-message-close-icon pi pi-times"></i>
+                        <span class="p-ink"></span>
+                    </button>
+                </ng-template>
+            </p-messages>
         </p-card>
+    </div>
+    <div class="p-col-12 p-md-9">
+        <div class="p-grid">
+            <div class="p-col-12">
+                <h2>> Klatka piersiowa</h2>
+            </div>
+            <div class="p-col-12 p-md-6 p-lg-4 p-xl-3">
+                <p-card header="Wyciskanie sztangi">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt!</p>
+                        <ng-template pTemplate="footer">
+                            <div class="p-d-flex p-jc-between">
+                                <p-button label="Dodaj" icon="pi pi-plus"></p-button>
+                                <p-button label="Więcej" icon="pi pi-bookmark" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button>
+                            </div>
+                        </ng-template>
+                </p-card>
+            </div>
+            <div class="p-col-12 p-md-6 p-lg-4 p-xl-3">
+                <p-card header="Wyciskanie hantelek">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt!</p>
+                        <ng-template pTemplate="footer">
+                            <div class="p-d-flex p-jc-between">
+                                <p-button label="Dodano" icon="pi pi-check" styleClass="p-button-success"></p-button>
+                                <p-button label="Więcej" icon="pi pi-bookmark" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button>
+                            </div>
+                        </ng-template>
+                </p-card>
+            </div>
+            <div class="p-col-12 p-md-6 p-lg-4 p-xl-3">
+                <p-card header="Pompki">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt!</p>
+                        <ng-template pTemplate="footer">
+                            <div class="p-d-flex p-jc-between">
+                                <p-button label="Dodaj" icon="pi pi-plus"></p-button>
+                                <p-button label="Więcej" icon="pi pi-bookmark" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button>
+                            </div>
+                        </ng-template>
+                </p-card>
+            </div>
+            <div class="p-col-12 p-md-6 p-lg-4 p-xl-3">
+                <p-card>
+                    <div class="p-col p-d-flex p-ai-center p-jc-center ng-star-inserted" style="height:13.2rem;"> <h1>+ 3</h1></div>
+                    <!-- <p-skeleton width="100%" height="11.75rem">
+                    </p-skeleton> -->
+                </p-card>
+            </div>
+            <div class="p-col-12">
+                <h2>> Plecy</h2>
+            </div>
+            <div class="p-col-12 p-md-6 p-lg-4 p-xl-3">
+                <p-card>
+                    <p-skeleton width="100%" height="10rem">
+                    </p-skeleton>
+                </p-card>
+            </div>
+            <div class="p-col-12 p-md-6 p-lg-4 p-xl-3">
+                <p-card>
+                    <p-skeleton width="100%" height="10rem">
+                    </p-skeleton>
+                </p-card>
+            </div>
+            <div class="p-col-12 p-md-6 p-lg-4 p-xl-3">
+                <p-card>
+                    <p-skeleton width="100%" height="10rem">
+                    </p-skeleton>
+                </p-card>
+            </div>
+            <div class="p-col-12 p-md-6 p-lg-4 p-xl-3">
+                <p-card>
+                    <p-skeleton width="100%" height="10rem">
+                    </p-skeleton>
+                </p-card>
+            </div>
+        </div>
     </div>
 </div>

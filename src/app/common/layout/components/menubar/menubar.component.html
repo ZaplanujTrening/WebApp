@@ -1,8 +1,12 @@
 <p-menubar [model]="items">
     <ng-template pTemplate="start">
-        <img src="assets/showcase/images/primeng.svg" height="40" class="p-mr-2">
+        <img src="assets/images/logo.png" height="45" class="p-mr-3">
     </ng-template>
     <ng-template pTemplate="end">
-        <input type="text" pInputText placeholder="Search">
+        <a role="menuitem" pripple="" class="p-ripple p-element p-menuitem-link" ng-reflect-ng-class="[object Object]" tabindex="0" aria-haspopup="false" aria-expanded="false">
+            <span class="p-menuitem-icon pi pi-fw pi-user" ng-reflect-ng-class="pi pi-fw pi-user"></span>
+            <span class="p-menuitem-text">Użytkownik</span>
+            <span class="p-submenu-icon pi pi-angle-down p-ml-2" ng-reflect-ng-class="[object Object]"></span>
+        </a>
     </ng-template>
 </p-menubar>

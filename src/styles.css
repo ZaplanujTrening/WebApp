@@ -2,3 +2,41 @@
 @import "../node_modules/primeicons/primeicons.css";
 @import "../node_modules/primeng/resources/themes/saga-purple/theme.css";
 @import "../node_modules/primeng/resources/primeng.min.css";
+@import "../node_modules/quill/dist/quill.snow.css";
+
+body {
+    margin: 0px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var(--surface-c);
+    font-family: var(--font-family);
+    font-weight: normal;
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+app-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+app-content {
+    flex: 1;
+    padding: 0.5rem 2rem;
+}
+
+app-footer {
+    padding: 1.5rem;
+    background-color: var(--surface-a);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p-menubar{
+    background-color: var(--surface-a);
+}

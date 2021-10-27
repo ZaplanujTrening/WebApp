@@ -7,6 +7,10 @@ import { LayoutComponent } from './layout.component';
 import { Routing } from 'src/app/modules/routing';
 import { RouterModule, Routes } from '@angular/router';
 import { MenubarModule } from 'primeng/menubar';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
+import { TabViewModule } from 'primeng/tabview';
+import { FormsModule }  from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -26,6 +30,10 @@ const routes: Routes = [
   imports: [
     CommonModule,
     MenubarModule,
+    InputTextModule,
+    ButtonModule,
+    TabViewModule,
+    FormsModule,
     RouterModule.forChild(routes)
   ],
   exports: [RouterModule],

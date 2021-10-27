@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExerciseListComponent implements OnInit {
 
+  display: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
