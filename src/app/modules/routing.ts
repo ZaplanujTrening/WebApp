@@ -12,6 +12,11 @@ const Routing: Routes = [
         import('./training/training.module').then((m) => m.TrainingModule),
     },
     {
+      path: 'auth',
+      loadChildren: () =>
+        import('./auth/auth.module').then((m) => m.AuthModule),
+    },
+    {
       path: '',
       redirectTo: '/exercise/list',
       pathMatch: 'full',

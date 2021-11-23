@@ -13,8 +13,9 @@ export class MenubarComponent implements OnInit {
   ngOnInit() {
       this.items = [
           {
-              label:'Twoje treningi',
+              label:'Aktywny trening',
               icon:'pi pi-fw pi-th-large',
+              url: '/training/active'
             //   items:[
             //       {
             //           label:'New',
@@ -47,6 +48,7 @@ export class MenubarComponent implements OnInit {
           {
               label:'Baza ćwiczeń',
               icon:'pi pi-fw pi-book',
+              url: '/exercise/list'
             //   items:[
             //       {
             //           label:'Left',

@@ -13,6 +13,9 @@ import { MessagesModule } from 'primeng/messages';
 import { MessageModule } from 'primeng/message';
 import { DialogModule } from 'primeng/dialog';
 import { InputTextModule } from 'primeng/inputtext';
+import { DataViewModule } from 'primeng/dataview';
+import { DropdownModule } from 'primeng/dropdown';
+import { TimelineModule } from 'primeng/timeline';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { InputTextModule } from 'primeng/inputtext';
     MessagesModule,
     MessageModule,
     DialogModule,
-    InputTextModule
+    InputTextModule,
+    DataViewModule,
+    DropdownModule,
+    TimelineModule
   ]
 })
 export class ExerciseModule { }

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContentComponent } from './components/content/content.component';
+import { MainComponent } from './components/main/main.component';
 import { MenubarComponent } from './components/menubar/menubar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutComponent } from './layout.component';
@@ -23,7 +23,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     LayoutComponent,
-    ContentComponent,
+    MainComponent,
     MenubarComponent,
     FooterComponent
   ],
